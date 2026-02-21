@@ -75,6 +75,28 @@
     </section>
     
   </div>
+
+  <script>
+    document.getElementById('txtSelected').addEventListener('click', function () {
+        toggleContent('Selected');
+    });
+
+    document.getElementById('txtDate').addEventListener('click', function () {
+        toggleContent('Date');
+    });
+
+    function toggleContent(type) {
+        document.querySelectorAll('.toggle-text').forEach(text => {
+            text.classList.remove('active');
+        });
+        document.querySelectorAll('.content').forEach(content => {
+            content.classList.remove('active');
+        });
+
+        document.getElementById('txt' + type).classList.add('active');
+        document.getElementById('content' + type).classList.add('active');
+    }
+</script>
 </body>
 </html>
 
