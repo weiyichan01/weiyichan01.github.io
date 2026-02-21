@@ -49,6 +49,55 @@
     width: 200px;
     border-radius: 8px;
   }
+
+  /* 论文条目容器 */
+  .publication-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+  }
+  
+  /* 论文图片 */
+  .publication-item .photo {
+      flex-shrink: 0;
+      width: 120px;
+  }
+  
+  .publication-item .photo img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+  }
+  
+  /* 论文内容 */
+  .publication-content {
+      flex: 1;
+  }
+  
+  .publication-content .authors {
+      margin: 8px 0;
+      color: #555;
+      font-size: 14px;
+  }
+  
+  .publication-content .publication-venue {
+      color: #666;
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 5px;
+  }
+  
+  .publication-content .publication-doi a {
+      color: #1a73e8;
+      font-size: 13px;
+  }
+    
 </style>
 </head>
   
