@@ -1,103 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yichan Wei</title>
-  <meta name="author" content="Yichan Wei">
-  <meta name="description" content="Yichan Wei - Master at SOM, Xi'an Jiaotong University. 
-    Research in Economics in HIS, Causal inference, and Data science">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/XJTU.png">
-
-  <style>
-  body {
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: 40px auto;
-    line-height: 1.6;
-  }
-  .container {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-  }
-  .text {
-    flex: 2;
-  }
-  .text h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-  }
-  .links a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #1a73e8;
-  }
-  .photo img {
-    width: 200px;
-    border-radius: 8px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zekun Qi</title>
+    <meta name="author" content="Zekun Qi">
+    <meta name="description" content="Zekun Qi - PhD Student at IIIS, Tsinghua University. Research in Embodied Intelligence, Agentic AI and 3D Computer Vision.">
+    
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
 </head>
-  
-<body>
-  <div class="container">
 
-    <!-- Profile Section -->
-    <section class="section-card profile-section">
-        <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; justify-content: center;">
-            <div style="flex: 1; min-width: 300px;">
-                <p style="text-align: center; margin-bottom: 20px;">
-                    <name>Yichan Wei</name>
-                </p>
-                <p style="text-align: justify;">
-                    I am a <b>Business Analyst</b> at <b>Meituan</b>, responsible for data modeling in the natural person 
-                    domain and user traffic behavior domain.
-                </p>
-                <p style="text-align: justify;">
-                    I obtained my bachelor's and master's degrees in Management Science and Engineering from 
-                    <a href="https://som.xjtu.edu.cn/en/">SOM, Xi'an Jiaotong University</a>, advised by Prof. 
-                    <a href="https://gr.xjtu.edu.cn/web/xiaoxiaoliu">Xiaoxiao Liu</a>. 
-                    My research focuses on <b>Economics in HIS</b>, <b>Causal inference</b>, and <b>Data science</b>.
-                </p>
-                <div class="links-section">
-                    <a href="xjwyc321@stu.xjtu.edu.cn">Email</a> /
-                    <a href="https://scholar.google.com/">Google Scholar</a> /
-                    <a href="https://github.com/weiyichan01">GitHub</a> /
-                    <a href="cv/YourName_CV.pdf">CV</a>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <section class="section-card profile-section">
+            <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; justify-content: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <p style="text-align: center; margin-bottom: 20px;">
+                        <name>Zekun Qi</name>
+                    </p>
+                    <p style="text-align: justify;">
+                        I am a first year PhD student at <a href="https://iiis.tsinghua.edu.cn/en/">IIIS, Tsinghua University</a>, under the supervision of Prof. <a href="https://ericyi.github.io/">Li Yi</a>.
+                        Previously, I obtained my bachelor's and master's degrees from <a href="http://en.xjtu.edu.cn/">Xi'an Jiaotong University</a>, supervised by Prof. <a href="https://iiis.tsinghua.edu.cn/yao/">Andrew C. Yao</a> and Prof. <a href="http://group.iiis.tsinghua.edu.cn/~maks/leader.html">Kaisheng Ma</a>.
+                        I collaborate closely with Prof. <a href="https://hughw19.github.io/">He Wang</a> and <a href="https://runpeidong.web.illinois.edu/">Runpei Dong</a>.
+                    </p>
+                    <p>
+                        I am currently a research intern at <strong>GalBot</strong>.
+                    </p>
+                    <p style="margin-top: 16px;">
+                        My research focuses on <strong>Embodied Intelligence</strong>, <strong>Agentic AI</strong> and <strong>3D Computer Vision</strong>.
+                    </p>
+                    <div class="links-section">
+                        <a href="mailto:qizekun@gmail.com">Email</a>
+                        <a href="https://scholar.google.com/citations?user=ap8yc3oAAAAJ">Google Scholar</a>
+                        <a href="https://github.com/qizekun">Github</a>
+                        <a href="Resume_Zekun_Qi.pdf" target="_blank">CV</a>
+                    </div>
+                </div>
+                <div style="flex-shrink: 0;">
+                    <img class="profile-photo" alt="Zekun Qi" src="images/qzk.jpg">
                 </div>
             </div>
-            <div class="photo">
-                <img src="images/profile.jpg" alt="Your photo">
-            </div>
-        </div>
-    </section>
-    
-  </div>
+        </section>
+    </div>
 
-  <script>
-    document.getElementById('txtSelected').addEventListener('click', function () {
-        toggleContent('Selected');
-    });
-
-    document.getElementById('txtDate').addEventListener('click', function () {
-        toggleContent('Date');
-    });
-
-    function toggleContent(type) {
-        document.querySelectorAll('.toggle-text').forEach(text => {
-            text.classList.remove('active');
-        });
-        document.querySelectorAll('.content').forEach(content => {
-            content.classList.remove('active');
+    <script>
+        document.getElementById('txtSelected').addEventListener('click', function () {
+            toggleContent('Selected');
         });
 
-        document.getElementById('txt' + type).classList.add('active');
-        document.getElementById('content' + type).classList.add('active');
-    }
-  </script>
+        document.getElementById('txtDate').addEventListener('click', function () {
+            toggleContent('Date');
+        });
+
+        function toggleContent(type) {
+            document.querySelectorAll('.toggle-text').forEach(text => {
+                text.classList.remove('active');
+            });
+            document.querySelectorAll('.content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            document.getElementById('txt' + type).classList.add('active');
+            document.getElementById('content' + type).classList.add('active');
+        }
+    </script>
 </body>
 </html>
+
+
 
 
