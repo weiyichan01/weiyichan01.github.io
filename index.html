@@ -17,10 +17,16 @@
     margin: 40px auto;
     line-height: 1.6;
   }
-  .container {
+  /* .container {
     display: flex;
     align-items: flex-start;
     gap: 40px;
+  } */
+  .container {
+    display: flex;
+    flex-direction: column;  /* 改为纵向排列 */
+    gap: 40px;               /* 保持间距 */
+    align-items: stretch;    /* 让子元素撑满宽度 */
   }
   .text {
     flex: 2;
